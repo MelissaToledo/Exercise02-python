@@ -30,21 +30,13 @@ while True:
         montoEg = float(input("¿Cuanto dinero desea retirar?...$"))
         if saldo < montoEg:
             print("Error: No hay suficientes fondos, su saldo pendiente sera negativo")
-            listatEg.append(montoEg)
-            egreso1 = egreso(montoEg)
-            resultEg = egreso1.addEgreso()
-            saldo = saldo + resultEg
-            print(f"Retiro de su cuenta: $", resultEg)
-            print(f"El saldo actual de la cuenta es ${saldo}")
-            print("-" * 100)
-        else:
-            listatEg.append(montoEg)
-            egreso1 = egreso(montoEg)
-            resultEg = egreso1.addEgreso()
-            saldo = saldo + resultEg
-            print(f"Retiro existosamente de su cuenta: $", resultEg)
-            print(f"El saldo actual de la cuenta es ${saldo}")
-            print("-" * 100)
+        listatEg.append(montoEg)
+        egreso1 = egreso(montoEg)
+        resultEg = egreso1.addEgreso()
+        saldo = saldo + resultEg
+        print(f"Retiro exitosamente de su cuenta: $", resultEg)
+        print(f"El saldo actual de la cuenta es ${saldo}")
+        print("-" * 100)
 
     elif option == "3":
         print("El reporte de todos sus ingresos es:")
